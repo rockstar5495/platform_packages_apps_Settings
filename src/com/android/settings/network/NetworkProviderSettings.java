@@ -757,6 +757,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         if (context == null) {
             return;
         }
+
         final LocationManager locationManager = context.getSystemService(LocationManager.class);
         if (isWifiEnabled || !locationManager.isLocationEnabled()
                 || !mWifiManager.isScanAlwaysAvailable()) {
